@@ -16,19 +16,21 @@
         }
         .message {
             display: none;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
             color: #007bff;
         }
     </style>
 </head>
 <body>
+    <h1 class="message">🎉 كل عام وأنت بخير 🎉</h1>
+
     <script>
         window.onload = function() {
             setTimeout(function() {
-                document.body.innerHTML = '<h1 class="message">🎉 كل عام وأنت بخير 🎉</h1>';
+                document.querySelector('.message').style.display = 'block';
             }, 1500); 
         };
     </script>
 </body>
 </html>
-Security token acquired
