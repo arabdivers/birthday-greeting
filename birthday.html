@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مفاجأة عيد الميلاد</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .message {
+            display: none;
+            font-size: 24px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.body.innerHTML = '<h1 class="message">🎉 كل عام وأنت بخير 🎉</h1>';
+            }, 1500); 
+        };
+    </script>
+</body>
+</html>
